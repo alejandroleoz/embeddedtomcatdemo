@@ -3,6 +3,6 @@ package com.mago;
 public class MyBean {
 
     public String getName() {
-        return "Alejandro";
+        return "Alejandro Ezequiel";
     }
 }
