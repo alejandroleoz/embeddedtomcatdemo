@@ -3,4 +3,15 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
 		 http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
+
+
+    <session-config>
+    <session-timeout>30</session-timeout>
+    </session-config>
+    <resource-env-ref>
+    <!-- Enable Weld CDI, also needs META-INF/context.xml entry -->
+    <resource-env-ref-name>BeanManager</resource-env-ref-name>
+    <resource-env-ref-type>javax.enterprise.inject.spi.BeanManager</resource-env-ref-type>
+    </resource-env-ref>
+    
 </web-app>
